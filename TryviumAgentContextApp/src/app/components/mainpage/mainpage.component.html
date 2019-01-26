@@ -1,0 +1,120 @@
+<div class="main-content-area">
+
+  <div class="main-btn-area">
+      <div class="float-right d-flex">
+          <div class="btns margin-right">Script&nbsp;&nbsp;<i class="fa fa-caret-down"></i></div>
+          <div class="btns margin-right">Invite Agent</div>
+          <div class="btns end-btn">End</div>
+      </div>
+  </div>
+
+  <div class="content-area">
+
+    <div class="profile-area float-left">
+      <div class="customer-basic-info">
+        <div class="customer-profile-pic"></div>
+        <div class="customer-name">{{customer_Profile.name}}</div>
+        <div class="position">{{customer_Profile.position}}</div>
+        <div class="channels">Channel | {{customer_Profile.channels}}</div>
+        <div>
+            <div class="btns open-profile">Open Profile</div>
+        </div>        
+        <div class="bor-bottom"></div>
+      </div>
+      <div class="customer-detail-info">
+        <div class="customer-info-head">Customer Information</div>
+
+          <div class="customer-info-details">
+            <div class="customer-info-group">
+                <div class="sub-heading">Email Address:</div>
+                <div class="customer-info">{{customer_Profile.email}}</div>
+            </div>
+            <div class="customer-info-group">
+                <div class="sub-heading">Phone Number:</div>
+                <div class="customer-info">{{customer_Profile.phone}}</div>
+            </div>
+            <div class="customer-info-group">
+                <div class="sub-heading">Routed Queue:</div>
+                <div class="customer-info">{{customer_Profile.routedQueue}}</div>
+            </div>
+            <div class="customer-info-group">
+                <div class="sub-heading">Queue Wait Time:</div>
+                <div class="customer-info">{{customer_Profile.queueWaitTime}}</div>
+            </div>
+          </div>
+          <div class="bor-bottom"></div>
+      </div>
+    </div>
+
+    <div class="customer-details-area float-left">
+        <div class="ticket-details">
+          <div class="ticket-user-info smooth-scroll" >
+                <div class="form-group">
+                        <label for="usr">Subject</label>
+                        <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group form-group-dynamic-input">
+                        <label for="pwd">Impact</label>
+                        <select id="impact" class="form-control">
+                            <option></option>
+                        </select>
+                </div>
+                <div class="form-group form-group-dynamic-input">
+                        <label for="pwd">Urgency</label>
+                        <select id="urgency" class="form-control">
+                            <option></option>
+                        </select> 
+                </div>
+                <div class="form-group form-group-dynamic-input create-btn">
+                    <div class="btns margin-right">Create</div> 
+                </div>
+
+          </div>
+          <div class="ticket-set-workinghours">
+                <div class="form-group ">
+                    <label for="usr">Set Working Ticket</label>
+                    <input type="text" class="form-control set-working-ticket-input" id="usr">
+                    <div class="btns set-working-ticket-set-btn">Set</div>
+                </div>
+          </div>
+
+        </div>
+        
+        <div class="ticket-history">
+            <div class="ticket-his-table-area">
+                <div class="table-header-area box-head ">
+                    <div class="table-header-title box-title float-left">
+                        Tickets History
+                    </div>
+                    <div class="table-header-search float-right">
+                        <input type="text" class="form-control form-control-area input-form-search" (input)="livesession.filterGlobal($event.target.value,'contains')"
+                            placeholder="Search" name="search">
+                    </div>
+                </div>
+                    <p-table [value]="cars">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Subject</th>
+                                <th>State</th>
+                                <th>Priority</th>
+                                <th>Update On</th>
+                                <th>Action</th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-car>
+                            <tr>
+                                <td>{{car.vin}}</td>
+                                <td>{{car.year}}</td>
+                                <td>{{car.brand}}</td>
+                                <td>{{car.color}}</td>
+                            </tr>
+                        </ng-template>
+                    </p-table>
+            </div>
+        </div>
+    </div>    
+
+  </div>
+
+</div>

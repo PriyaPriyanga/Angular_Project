@@ -1,0 +1,130 @@
+.content-area{
+    width: 100%;
+    margin-top: 42px;
+    height: 100%;
+}
+.profile-area{
+    width: 35%;
+    background-color: #fff;
+    height: 100%;
+}
+.customer-details-area{
+    width: 64%;
+    /* background-color: #fff; */
+    margin-left: 1%;
+    height: 100%;
+}
+.customer-basic-info{
+    text-align: center;
+    padding: 20px 20px 0 20px
+}
+.customer-profile-pic{
+    width: 150px;
+    height: 150px;
+    background: #dbdce0;
+    border-radius: 74px;
+    margin: 0 auto;
+}
+.customer-name,.customer-info-head{
+    padding: 3px 0;
+    /* font-weight: bold; */
+    color: #626668;
+    font-size: 18px;
+}
+.position{
+    font-size: 9px;
+    color: #83959e;
+}
+.channels{
+    text-transform: uppercase;
+    padding: 3px 0;
+    color: #11a0f8;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 19px;
+}
+.open-profile{
+    width: 120px;
+    margin: 2px auto;
+}
+.customer-detail-info{
+    padding: 10px 20px;
+}
+.bor-bottom{
+    border-bottom:1px dotted #f2f2f2;
+    margin: 15px 0;
+}
+.customer-info-head{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.customer-info-details{
+    font-size: 11px
+}
+.customer-info-group{
+    margin: 14px 0;
+}
+.sub-heading{
+    color: #9fb0b9;
+}
+.customer-info{
+    color: #515b5f;
+}
+
+/*ticket-details*/
+.ticket-details{
+    background: #fff;
+    height: 250px;
+    width: 100%;
+}
+.ticket-user-info{
+    width: 60%;
+    height: 250px;
+    overflow-y: auto;
+    /* border: 1px solid #c4c4c4; */
+    padding: 23px 22px;
+    float: left;
+}
+.form-group label{
+    font-size: 11px;
+    color: #9fb0b9;
+}
+.form-group{
+    margin-bottom: 1 !important;
+}
+.form-group-dynamic-input{
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+.create-btn{
+    width: auto;
+    margin-right: 0 !important;
+}
+.ticket-set-workinghours{
+    float: left;
+    width: 40%;
+    /* border: 1px solid #c4c4c4; */
+    height: 100%;
+    height: 100%;
+    padding: 80px 20px;
+}
+.set-working-ticket-input,.set-working-ticket-set-btn{
+    float: left;
+}
+.set-working-ticket-input{
+    width: 75%;
+}
+.set-working-ticket-set-btn{
+    width: 20%;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 13px;
+}
+
+/*ticket-history*/
+.ticket-history{
+    height: 99%;
+    background: #fff;
+    margin-top: 2%;
+}
